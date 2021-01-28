@@ -1,0 +1,14 @@
+@import './helper/colors.scss';
+@import './helper/fonts.scss';
+@import './base/reset.scss';
+@import './helper/mixin.scss';
+@import './helper/animation.scss';
+//Layout Component
+@import 'components/layouts/header/index.scss';
+@import 'components/layouts/footer/index.scss';
+
+// HomePage Component
+@import 'components/homepage/index.scss';
+//Account Component
+@import 'components/account/signup/index.scss';
+//Page Common

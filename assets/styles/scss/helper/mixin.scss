@@ -1,0 +1,39 @@
+@mixin title-header($pt, $fs) {
+  padding-top: $pt;
+  line-height: 1.1px;
+  color: #fff;
+  font-weight: bold;
+  font-variant: normal;
+  font-size: $fs;
+}
+@mixin animate-header-content($fs, $tll) {
+  h1 {
+    top: 1em;
+    position: absolute;
+    transform: translate($tll, 0%);
+    font-size: $fs;
+    font-weight: bold;
+    cursor: default;
+  }
+  h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: thin #32a852;
+  }
+  h1:nth-child(2) {
+    color: #32a852;
+    animation: animate 5s ease-in-out infinite;
+  }
+  h1:hover{
+    -webkit-text-fill-color: #32a852;
+    transition: all 1s;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+}
