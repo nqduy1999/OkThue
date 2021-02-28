@@ -17,6 +17,9 @@
             .nav {
                 display: grid;
                 grid-template-columns: 25% 50% auto;
+                position: fixed;
+                padding-bottom: 40px;
+                width: 100%;
                 h1 {
                     padding-left: 8%;
                     i {
@@ -109,7 +112,7 @@
                 }
             }
             .tab {
-                margin-top: 2%;
+                margin-top: 5%;
                 border: 1px solid #dddddd;
                 margin-left: 18%;
                 border-radius: 32px;
