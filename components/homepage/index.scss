@@ -4,6 +4,51 @@
             padding : 30px 0;
             width: 90%;
             margin: 0 auto;
+            .header-content{
+                padding-left: 25%;
+                width: 90%;
+                text-align: center;
+                font-size: 48px;
+                margin: 0 auto;
+                color: white;
+                @include animate-header-content(2em, 45);
+            }
+            @keyframes movecar {
+                0%      { left: 0px; }
+                50%     { left: 80%; }
+                100%    { left: 0px; } 
+            }
+            
+                @-webkit-keyframes movecar {
+                    0%      { left: 0px; }
+                    50%     { left: 70%; }
+                    100%    { left: 0px; } 
+                }
+            
+                @-moz-keyframes movecar {
+                    0%      { left: 0px; }
+                    50%     { left: 70%; }
+                    100%    { left: 0px; } 
+                }
+            
+            .sky {
+                width: 90%;
+                position: absolute;
+                margin-top: 30%;
+                margin-bottom: 50px;
+                overflow: hidden;   /* this keeps car inside sky div */
+            }
+            
+            .sky img {
+                width: 250px;
+                padding-left: 7%;
+                position: relative;
+                display: inline;
+            
+                animation: movecar 10s linear 1s infinite alternate; 
+                    -webkit-animation: movecar 10s ease-in-out 1s infinite alternate;
+                    -moz-animation: movecar 10s ease-in-out 1a infinite alternate;
+            }  
         }
 }
 }

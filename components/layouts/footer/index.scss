@@ -1,0 +1,47 @@
+.footer{
+    &__wrapper-page{
+        padding: 20px;
+        width: 100%;
+        background-color: #32a852;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .rule-footer{
+            display: flex;
+            width: 30%;
+            li{
+                list-style: none;
+                float: left;
+                padding: 0px 15px;
+                position: relative;
+                font-style: normal;
+                font-stretch: normal;
+                font-size: 1em;
+                color: #fff;
+                line-height: 1.5;
+                outline: none;
+            }
+        }
+        .content-footer{
+            width: 40%;
+            font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 1.143em;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    outline: none;
+    text-align: center;
+        }
+        .icon-download{
+            display: flex;
+            width: 30%;
+            justify-content: center;
+            img{
+                margin-left: 20px;
+                width: 130px;
+            }
+        }
+    }
+}

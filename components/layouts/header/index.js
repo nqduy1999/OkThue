@@ -4,9 +4,8 @@ import SignUp from 'components/account/signup';
 import { AccountContext } from 'components/common/context/AccountContext';
 import React, { useState } from 'react';
 import { classPrefixor } from 'utils/classPrefixor';
-import Background from 'assets/images/background.jpg';
-import MenuFlight from './menu/menu-flight';
-import MenuTaxi from './menu/menu-taxi';
+import MenuFlight from '../../menu/menu-flight';
+import MenuTaxi from '../../menu/menu-taxi';
 const prefix = 'header';
 const c = classPrefixor(prefix);
 
@@ -15,7 +14,7 @@ const Header = () => {
     AccountContext
   );
   const [type, setType] = useState();
-  const [typeMenu, setTypeMenu] = useState('car-hire');
+  const [typeMenu, setTypeMenu] = useState();
   const Login = () => {
     setTypeModal('login');
     setModal(true);
@@ -35,14 +34,8 @@ const Header = () => {
       <Menu.Item>Cho thuê nhà</Menu.Item>
     </Menu>
   );
-  const background = {
-    backgroundImage: `url(${Background})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-  };
   return (
-    <div className={c`wrapper-page`} style={background}>
+    <div className={c`wrapper-page`}>
       <header className="header">
         <nav className="nav">
           <h1>
@@ -89,17 +82,7 @@ const Header = () => {
         ) : (
           ''
         )}
-        <div className="header-content">
-          <h1>Tìm xe ngay!</h1>
-          <h1>Tìm xe ngay!</h1>
-        </div>
-        <div className="sky">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sedan-car.svg/1280px-Sedan-car.svg.png" />
-          <div className="rode1"></div>
-          <div className="rode2"></div>
-        </div>
       </header>
-
       {typeModal == 'login' ? (
         <SignUp type={type} setTypeModal={setTypeModal} />
       ) : typeModal == 'login-phone' ? (

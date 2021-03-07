@@ -1,7 +1,9 @@
-.header {
-    width: 100%;
+.header {  
     &__wrapper-page {
-        padding-bottom: 34.2%;
+        width: 100%;
+        background-color: #32a852;
+        height: 120px;
+        position: fixed;
         .button {
             border: none;
             display: inline-block;
@@ -11,13 +13,11 @@
             cursor: pointer;
         }
         .header {
-            width: 100%;
             padding: 20px;
             //responsive
             .nav {
                 display: grid;
                 grid-template-columns: 25% 50% auto;
-                position: fixed;
                 padding-bottom: 40px;
                 width: 100%;
                 h1 {
@@ -27,7 +27,7 @@
                     }
                     cursor: default;
                     @include title-header(0, 1.5em);
-                    color: #32a852 ;
+                    color: #fff ;
                     letter-spacing: 0.5px;
                 }
                 &__button {
@@ -79,7 +79,7 @@
                     }
                     .ant-menu-item-selected{
                         background-color: transparent;
-                        color: #32a852;
+                        color: #363a45;
                     }
                 }
             }
@@ -156,52 +156,6 @@
             }
         }
     }
-    .header-content{
-        padding-left: 25%;
-        width: 90%;
-        position: absolute;
-        text-align: center;
-        font-size: 48px;
-        margin: 0 auto;
-        color: white;
-        @include animate-header-content(2em, 45);
-    }
-    @keyframes movecar {
-        0%      { left: 0px; }
-        50%     { left: 80%; }
-        100%    { left: 0px; } 
-    }
-    
-        @-webkit-keyframes movecar {
-            0%      { left: 0px; }
-            50%     { left: 70%; }
-            100%    { left: 0px; } 
-        }
-    
-        @-moz-keyframes movecar {
-            0%      { left: 0px; }
-            50%     { left: 70%; }
-            100%    { left: 0px; } 
-        }
-    
-    .sky {
-        width: 90%;
-        position: absolute;
-        margin-top: 30%;
-        margin-bottom: 50px;
-        overflow: hidden;   /* this keeps car inside sky div */
-    }
-    
-    .sky img {
-        width: 250px;
-        padding-left: 7%;
-        position: relative;
-        display: inline;
-    
-        animation: movecar 10s linear 1s infinite alternate; 
-            -webkit-animation: movecar 10s ease-in-out 1s infinite alternate;
-            -moz-animation: movecar 10s ease-in-out 1a infinite alternate;
-    }  
 }
 
 .menu-user {

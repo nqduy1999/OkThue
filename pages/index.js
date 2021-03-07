@@ -6,11 +6,6 @@ class Index extends PureComponent {
     super(props);
     this.state = { loading: true };
   }
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     this.setState({ loading: false });
-  //   }, 2500);
-  // }
   render() {
     return <HomePage />;
   }

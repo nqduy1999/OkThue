@@ -3,11 +3,8 @@ import { AccountContext } from 'components/common/context/AccountContext';
 import React, { useContext, useState } from 'react';
 import { classPrefixor } from 'utils/classPrefixor';
 import { CloseCircleOutlined, PhoneOutlined } from '@ant-design/icons';
-import google from 'assets/images/google-icon.svg';
-import appstore from 'assets/images/appstore.svg';
-import chplay from 'assets/images/chplay.svg';
-import facebook from 'assets/images/facebook.svg';
 import PropTypes from 'prop-types';
+import { images } from 'utils/images';
 
 // Hook
 
@@ -75,10 +72,13 @@ const SignUp = ({ ...props }) => {
         </div>
         {clickmore ? (
           <div className="sign-in">
-            <Button icon={<img src={google} />} className="google">
+            <Button icon={<img src={images.icon_google} />} className="google">
               Đăng nhập bằng Google
             </Button>
-            <Button icon={<img src={facebook} />} className="facebook">
+            <Button
+              icon={<img src={images.icon_facebook} />}
+              className="facebook"
+            >
               Đăng nhập bằng Facebook
             </Button>
             <Button
@@ -92,7 +92,7 @@ const SignUp = ({ ...props }) => {
           </div>
         ) : (
           <div className="sign-in">
-            <Button icon={<img src={google} />} className="google">
+            <Button icon={<img src={images.icon_google} />} className="google">
               Đăng nhập bằng Google
             </Button>
             <Button className="more" onClick={() => setClickmore(true)}>
@@ -105,10 +105,10 @@ const SignUp = ({ ...props }) => {
         <h1>Tải Ngay Ứng Dụng</h1>
         <div className={`footer__down-btn`}>
           <Button>
-            <img src={appstore} />
+            <img src={images.icon_appstore} />
           </Button>
           <Button>
-            <img src={chplay} />
+            <img src={images.icon_chplay} />
           </Button>
         </div>
       </div>

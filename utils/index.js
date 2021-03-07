@@ -8,6 +8,13 @@ export const urlHelper = {
       to: '/'
     },
     initProps: {}
+  }),
+  getUrlFind: () => ({
+    layout: DefaultLayout,
+    route: {
+      to: '/find'
+    },
+    initProps: {}
   })
 };
 
