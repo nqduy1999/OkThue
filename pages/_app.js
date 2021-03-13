@@ -8,9 +8,9 @@ import 'antd/dist/antd.css';
 import 'nprogress/nprogress.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'assets/styles/scss/main.scss';
-import GlobalProvider from 'components/common/context/GlobalContext';
-import { AccountContextProvider } from 'components/common/context/AccountContext';
-import Layout from 'components/layouts';
+import GlobalProvider from 'containers/common/context/GlobalContext';
+import { AccountContextProvider } from 'containers/common/context/AccountContext';
+import Layout from 'containers/layouts';
 
 const store = configStore();
 

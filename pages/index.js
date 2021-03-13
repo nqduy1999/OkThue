@@ -1,4 +1,4 @@
-import HomePage from 'components/homepage';
+import HomePage from 'containers/homepage';
 import React, { PureComponent } from 'react';
 
 class Index extends PureComponent {

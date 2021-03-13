@@ -1,4 +1,4 @@
-import FindComponent from 'components/find';
+import FindComponent from 'containers/find';
 import React, { PureComponent } from 'react';
 
 class Find extends PureComponent {

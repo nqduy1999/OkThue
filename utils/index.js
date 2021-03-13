@@ -1,4 +1,4 @@
-import DefaultLayout from 'components/layouts';
+import DefaultLayout from 'containers/layouts';
 import jwt_decode from 'jwt-decode';
 
 export const urlHelper = {
