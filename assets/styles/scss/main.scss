@@ -4,14 +4,14 @@
 @import './helper/mixin.scss';
 @import './helper/animation.scss';
 //Layout Component
-@import 'components/layouts/header/index.scss';
-@import 'components/layouts/footer/index.scss';
+@import 'containers/layouts/header/index.scss';
+@import 'containers/layouts/footer/index.scss';
 
 // HomePage Component
-@import 'components/homepage/index.scss';
+@import 'containers/homepage/index.scss';
 //Account Component
-@import 'components/account/signup/index.scss';
+@import 'containers/account/signup/index.scss';
 //Page Common
 
 //Find Car
-@import 'components/find/style.scss';
+@import 'containers/find/style.scss';
