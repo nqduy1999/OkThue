@@ -6,7 +6,11 @@ import { classPrefixor } from 'utils/classPrefixor';
 const prefix = 'find-car';
 const c = classPrefixor(prefix);
 const FindComponent = () => {
-  return <div className={c`wrapper`}></div>;
+  return (
+    <div className={c`wrapper`}>
+      <div className="header"> </div>
+    </div>
+  );
 };
 export default FindComponent;
 FindComponent.propTypes = {
